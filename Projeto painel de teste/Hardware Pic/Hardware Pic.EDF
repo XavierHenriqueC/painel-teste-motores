@@ -1,0 +1,403 @@
+(PCB Hardware_Pic
+ (parser
+  (host_cad ARES)
+  (host_version 7.7 SP2)
+ )
+ (resolution mm 100000)
+ (unit mm)
+ (structure
+  (boundary (rect pcb -152.40000 -127.00000 152.40000 127.00000))
+  (flip_style mirror_first)
+  (layer TOP (type signal) (direction horizontal))
+  (layer I1 (type signal) (direction off))
+  (layer I2 (type signal) (direction off))
+  (layer I3 (type signal) (direction off))
+  (layer I4 (type signal) (direction off))
+  (layer I5 (type signal) (direction off))
+  (layer I6 (type signal) (direction off))
+  (layer I7 (type signal) (direction off))
+  (layer I8 (type signal) (direction off))
+  (layer I9 (type signal) (direction off))
+  (layer I10 (type signal) (direction off))
+  (layer I11 (type signal) (direction off))
+  (layer I12 (type signal) (direction off))
+  (layer I13 (type signal) (direction off))
+  (layer I14 (type signal) (direction off))
+  (layer BOT (type signal) (direction vertical))
+  (grid via  0.63500)
+  (grid wire 0.63500)
+  (control
+   (via_at_smd off)
+   (off_grid on)
+  )
+  (via
+   $VIA_POWER
+   $VIA_SIGNAL
+   (spare
+   )
+  )
+  (rule
+   (width 0.30480)
+   (clearance 0.38100)
+   (clearance 0.25400 (type wire_via))
+   (clearance 0.25400 (type wire_smd))
+   (clearance 0.25400 (type wire_pin))
+   (clearance 0.25400 (type wire_wire))
+   (clearance 0.25400 (type via_pin))
+   (clearance 0.25400 (type via_via))
+   (clearance 0.25400 (type via_smd))
+  )
+ )
+ (placement
+ )
+ (library
+  (padstack $VIA_POWER (absolute on)
+   (shape (circle TOP 1.27000 0 0))
+   (shape (circle I1 1.27000 0 0))
+   (shape (circle I2 1.27000 0 0))
+   (shape (circle I3 1.27000 0 0))
+   (shape (circle I4 1.27000 0 0))
+   (shape (circle I5 1.27000 0 0))
+   (shape (circle I6 1.27000 0 0))
+   (shape (circle I7 1.27000 0 0))
+   (shape (circle I8 1.27000 0 0))
+   (shape (circle I9 1.27000 0 0))
+   (shape (circle I10 1.27000 0 0))
+   (shape (circle I11 1.27000 0 0))
+   (shape (circle I12 1.27000 0 0))
+   (shape (circle I13 1.27000 0 0))
+   (shape (circle I14 1.27000 0 0))
+   (shape (circle BOT 1.27000 0 0))
+  )
+  (padstack $VIA_SIGNAL (absolute on)
+   (shape (circle TOP 1.27000 0 0))
+   (shape (circle I1 1.27000 0 0))
+   (shape (circle I2 1.27000 0 0))
+   (shape (circle I3 1.27000 0 0))
+   (shape (circle I4 1.27000 0 0))
+   (shape (circle I5 1.27000 0 0))
+   (shape (circle I6 1.27000 0 0))
+   (shape (circle I7 1.27000 0 0))
+   (shape (circle I8 1.27000 0 0))
+   (shape (circle I9 1.27000 0 0))
+   (shape (circle I10 1.27000 0 0))
+   (shape (circle I11 1.27000 0 0))
+   (shape (circle I12 1.27000 0 0))
+   (shape (circle I13 1.27000 0 0))
+   (shape (circle I14 1.27000 0 0))
+   (shape (circle BOT 1.27000 0 0))
+  )
+ )
+ (network
+  (net "#00000"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00001"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00003"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00004"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00007"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00009"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00010"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00012"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00015"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00017"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00018"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00019"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00021"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00023"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00024"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00025"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00026"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00031"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00034"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00037"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00040"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00043"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00045"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00055"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00056"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00058"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00059"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00060"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00061"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00067"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00068"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00069"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "#00070"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_SIGNAL)
+   )
+   (pins)
+  )
+  (net "GND"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_POWER)
+   )
+   (pins)
+  )
+  (net "VCC/VDD"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via $VIA_POWER)
+   )
+   (pins)
+  )
+  (class POWER
+   "GND"
+   "VCC/VDD"
+   (rule
+    (width 0.30480)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+  )
+  (class SIGNAL
+   "#00000"
+   "#00001"
+   "#00003"
+   "#00004"
+   "#00007"
+   "#00009"
+   "#00010"
+   "#00012"
+   "#00015"
+   "#00017"
+   "#00018"
+   "#00019"
+   "#00021"
+   "#00023"
+   "#00024"
+   "#00025"
+   "#00026"
+   "#00031"
+   "#00034"
+   "#00037"
+   "#00040"
+   "#00043"
+   "#00045"
+   "#00055"
+   "#00056"
+   "#00058"
+   "#00059"
+   "#00060"
+   "#00061"
+   "#00067"
+   "#00068"
+   "#00069"
+   "#00070"
+   "{NC}"
+   "{VOID}"
+   (rule
+    (width 0.30480)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+  )
+ )
+ (wiring
+ )
+)

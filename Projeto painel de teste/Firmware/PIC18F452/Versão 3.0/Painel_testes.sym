@@ -1,0 +1,337 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-404 gdram
+405-406 tempo_on
+407     start_on
+408     filtro
+409     Mod_Start
+40A-40B tempo_on_pulse
+40C-40D tempo_off_pulse
+40E-40F tempo_on_pulse_set
+410-411 tempo_off_pulse_set
+412     pulse_qnd
+413     pulse_qnd_set
+414-417 L1
+418-41B Offset_L1
+41C-41F ref_L1
+420-423 L1_eq
+424-427 L1_real
+428     rep1
+429-42C L2
+42D-430 Offset_L2
+431-434 ref_L2
+435-438 L2_eq
+439-43C L2_real
+43D     rep2
+43E-441 L3
+442-445 Offset_L3
+446-449 ref_L3
+44A-44D L3_eq
+44E-451 L3_real
+452     rep3
+453-456 tensao_L1
+457-45A Ajuste_L1
+45B-45E tensao_L2
+45F-462 Ajuste_L2
+463-466 tensao_L3
+467-46A Ajuste_L3
+46B-46C mediaAD_L1
+46D-46E mediaAD_L2
+46F-470 mediaAD_L3
+471-474 tensao
+475-476 valor
+477-478 valor_adc
+479     rep
+47A     menu
+47B     menu_lib
+47C     filtro_E0
+47D     filtro_c3
+47E     TempoET
+47F-482 TempoETreal
+483-484 Pot_real
+485     Pot_HP
+486-487 tensao_rede
+488-48B corrente_media
+48C-48D leituraEeprom
+48E     def_eeprom
+48F-4C0 string
+4C1-4C2 @sprintf_string
+4C3     @delay_ms1.P1
+4C3-4C4 @PRINTF_LD_306.P2
+4C3     read_int16_eeprom.address
+4C3     glcd_rect.x1
+4C3     glcd_update.v
+4C3-4C6 @FLT.P1
+4C3-4C6 @SFTOI.P2
+4C3     @PRINTF_D_306.P3
+4C3     glcd_text57.x
+4C3     glcd_fillScreen.color
+4C3-4C4 @ITOF.P1
+4C3-4C4 @DIV1616.P2
+4C3     leitura_sensores.@SCRATCH1
+4C3     @PSTRINGC_306.@SCRATCH1
+4C3     calculos_potencia.@SCRATCH1
+4C3     MAIN.@SCRATCH1
+4C4     glcd_update.h
+4C4     @PRINTF_D_306.P1
+4C4     glcd_fillScreen.v
+4C4     glcd_rect.y1
+4C4     read_int16_eeprom.i
+4C4     glcd_text57.y
+4C4     leitura_sensores.@SCRATCH2
+4C4     @PSTRINGC_306.@SCRATCH2
+4C4     calculos_potencia.@SCRATCH2
+4C4     MAIN.@SCRATCH2
+4C5     glcd_fillScreen.h
+4C5     write_int16_eeprom.address
+4C5-4C6 @DIV1616.P1
+4C5     glcd_rect.x2
+4C5-4C6 read_int16_eeprom.data
+4C5-4C6 glcd_text57.textptr
+4C5     glcd_update.@SCRATCH1
+4C5     leitura_sensores.@SCRATCH3
+4C5     @PRINTF_LD_306.@SCRATCH1
+4C5     @PRINTF_D_306.@SCRATCH1
+4C5     calculos_potencia.@SCRATCH3
+4C6     glcd_rect.y2
+4C6-4C7 write_int16_eeprom.data
+4C6     glcd_instruction.x
+4C6-4C7 glcd_fillScreen.d
+4C6     glcd_update.@SCRATCH2
+4C6     leitura_sensores.@SCRATCH4
+4C6     @PRINTF_LD_306.@SCRATCH2
+4C6     @PRINTF_D_306.@SCRATCH2
+4C6     calculos_potencia.@SCRATCH4
+4C7-4CA @ADDFF.P1
+4C7-4CA @PRINTF_L32D_306FPFPF.P2
+4C7-4CA @FLT.P3
+4C7     glcd_text57.size
+4C7-4CA @DIVFF.P1
+4C7     glcd_rect.fill
+4C7     glcd_update.@SCRATCH3
+4C7     read_int16_eeprom.@SCRATCH1
+4C7     @PRINTF_LD_306.@SCRATCH3
+4C7     @PRINTF_D_306.@SCRATCH3
+4C7     @DIV1616.@SCRATCH1
+4C8     glcd_text57.color
+4C8     glcd_data.x
+4C8     glcd_rect.color
+4C8     write_int16_eeprom.i
+4C8     glcd_fillScreen.@SCRATCH1
+4C8     read_int16_eeprom.@SCRATCH2
+4C8     @PRINTF_LD_306.@SCRATCH4
+4C8     @PRINTF_D_306.@SCRATCH4
+4C9     glcd_text57.j
+4C9     @DIV88.P1
+4C9.0   glcd_check_busy.busy
+4C9     glcd_rect.i
+4C9     glcd_fillScreen.@SCRATCH2
+4C9     write_int16_eeprom.@SCRATCH1
+4C9     read_int16_eeprom.@SCRATCH3
+4C9     @PRINTF_LD_306.@SCRATCH5
+4CA     @DIV88.P1
+4CA     glcd_rect.xmin
+4CA     glcd_text57.k
+4CA     glcd_fillScreen.@SCRATCH3
+4CA     write_int16_eeprom.@SCRATCH2
+4CA     read_int16_eeprom.@SCRATCH4
+4CA     @PRINTF_LD_306.@SCRATCH6
+4CB     glcd_rect.xmax
+4CB     glcd_text57.l
+4CB-4CE @ADDFF.P1
+4CB     @PRINTF_L32D_306FPFPF.P2
+4CB-4CE @DIVFF.P3
+4CB     glcd_fillScreen.@SCRATCH4
+4CB     write_int16_eeprom.@SCRATCH3
+4CB     @FLT.@SCRATCH1
+4CB     @PRINTF_LD_306.@SCRATCH7
+4CB     @DIV88.@SCRATCH1
+4CC     glcd_text57.m
+4CC     glcd_rect.ymin
+4CC     @FLT.@SCRATCH2
+4CC     @PRINTF_L32D_306FPFPF.@SCRATCH1
+4CD-4D1 glcd_text57.pixelData
+4CD     glcd_rect.ymax
+4CD     @PRINTF_L32D_306FPFPF.@SCRATCH2
+4CE     glcd_line.x1
+4CE     @PRINTF_L32D_306FPFPF.@SCRATCH3
+4CF     glcd_line.y1
+4CF     @ADDFF.@SCRATCH1
+4CF     @DIVFF.@SCRATCH1
+4CF     @PRINTF_L32D_306FPFPF.@SCRATCH4
+4D0     glcd_line.x2
+4D0     @ADDFF.@SCRATCH2
+4D0     @DIVFF.@SCRATCH2
+4D0     @PRINTF_L32D_306FPFPF.@SCRATCH5
+4D1     glcd_line.y2
+4D1     @ADDFF.@SCRATCH3
+4D1     @DIVFF.@SCRATCH3
+4D1     @PRINTF_L32D_306FPFPF.@SCRATCH6
+4D2     glcd_line.color
+4D2     glcd_text57.@SCRATCH1
+4D2     @ADDFF.@SCRATCH4
+4D2     @DIVFF.@SCRATCH4
+4D2     @PRINTF_L32D_306FPFPF.@SCRATCH7
+4D3-4D4 glcd_line.dy
+4D3     glcd_text57.@SCRATCH2
+4D3     @ADDFF.@SCRATCH5
+4D3     @DIVFF.@SCRATCH5
+4D3     @PRINTF_L32D_306FPFPF.@SCRATCH8
+4D4-4D7 @MULFF.P1
+4D4     @SPRINTF.P2
+4D4-4D7 @DIV3232.P3
+4D4-4D7 @FTOSD.P4
+4D4     glcd_text57.@SCRATCH3
+4D4     @ADDFF.@SCRATCH6
+4D4     @DIVFF.@SCRATCH6
+4D5-4D6 glcd_line.dx
+4D5     glcd_text57.@SCRATCH4
+4D5     @ADDFF.@SCRATCH7
+4D6     glcd_text57.@SCRATCH5
+4D6     @ADDFF.@SCRATCH8
+4D7     glcd_line.addx
+4D8-4DB @DIV3232.P1
+4D8-4DB @MULFF.P2
+4D8     glcd_line.addy
+4D8     @FTOSD.@SCRATCH1
+4D9-4DA glcd_line.P
+4DB-4DC glcd_line.diff
+4DC     @MULFF.@SCRATCH1
+4DC     @DIV3232.@SCRATCH1
+4DD     glcd_line.i
+4DD     @MULFF.@SCRATCH2
+4DD     @DIV3232.@SCRATCH2
+4DE     glcd_pixel.x
+4DE     glcd_line.@SCRATCH1
+4DE     @MULFF.@SCRATCH3
+4DE     @DIV3232.@SCRATCH3
+4DF     glcd_pixel.y
+4DF     @DIV3232.@SCRATCH4
+4E0     glcd_pixel.color
+4E0     @DIV3232.@SCRATCH5
+4E1     glcd_pixel.v
+4E2     glcd_pixel.h
+4E3     glcd_pixel.b
+4E4-4E5 @MUL1616.P1
+4E4     glcd_pixel.@SCRATCH1
+4E5     glcd_pixel.@SCRATCH2
+4E6-4E7 @MUL1616.P1
+4E8     @MUL1616.@SCRATCH1
+F83     PSP_DATA
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+02D6  @delay_ms1
+0300  glcd_check_busy
+0326  glcd_instruction
+0484  glcd_data
+0404  glcd_fillScreen
+03E2  @MUL1616
+0540  glcd_update
+064C  glcd_init_graph
+16BC  glcd_pixel
+0004  FONT
+0114  FONT2
+1F9C  glcd_line
+20DA  glcd_rect
+17BE  glcd_text57
+369E  write_int16_eeprom
+06E6  read_int16_eeprom
+0CB6  leitura_sensores
+073A  @ITOF
+0770  @MULFF
+0866  @ADDFF
+0ADE  @DIVFF
+0C3C  @FLT
+32D2  controle_saidas
+1DD8  controle_menu
+219E  menus
+14F4  @SPRINTF
+141C  @FTOSD
+1460  @DIV3232
+1514  @PRINTF_L32D_306FPFPF
+0200  @const316
+1966  @PSTRINGC_306
+0204  @const319
+0208  @const321
+020C  @const322
+0236  @const323
+023E  @const325
+0250  @const326
+0256  @const327
+025C  @const328
+0264  @const329
+1EA6  @PRINTF_LD_306
+0270  @const333
+027C  @const335
+19CE  @DIV88
+19FA  @PRINTF_D_306
+0288  @const343
+02AA  @const344
+02B2  @const345
+02B8  @const349
+02BC  @const352
+02C0  @const355
+1AB6  calculos_potencia
+13E0  @SFTOI
+02C4  @const360
+1986  @DIV1616
+02CE  @const365
+3702  MAIN
+3702  @cinit1
+3814  @cinit2
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\Henrique\Desktop\Projeto painel de teste\Firmware\PIC18F452\Versão 3.0\
+
+Project Files:
+    Painel_testes.c                                         [22-jul-20 16:05  CRC=81D39A9B]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F452.H [16-jul-12 13:21  CRC=B966D23F]
+    st7920.c                                                [27-fev-20 11:03  CRC=BA4436C2]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\graphics.c [06-jul-10 07:49  CRC=70BB89DE]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\internal_eeprom.c [06-abr-07 11:40  CRC=E82006C9]
+
+Source signature=367A3B0C
+
+Units:
+    Painel_testes (main)
+
+Compiler Settings:
+    Processor:      PIC18F452
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      Painel_testes.err
+    Ext Symbols: Painel_testes.esym
+    INHX32:      Painel_testes.hex
+    Symbols:     Painel_testes.sym
+    List:        Painel_testes.lst
+    Debug/COFF:  Painel_testes.cof
+    Project:     Painel_testes.PJT
+    Call Tree:   Painel_testes.tre
+    Statistics:  Painel_testes.STA

@@ -1,0 +1,348 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-404 gdram
+405-406 tempo_on
+407     start_on
+408     filtro
+409-40C L1
+40D-40E Offset_L1
+40F-412 ref_L1
+413-416 L1_eq
+417-41A L1_real
+41B     rep1
+41C-41F L2
+420-421 Offset_L2
+422-425 ref_L2
+426-429 L2_eq
+42A-42D L2_real
+42E     rep2
+42F-432 L3
+433-434 Offset_L3
+435-438 ref_L3
+439-43C L3_eq
+43D-440 L3_real
+441     rep3
+442-443 mediaAD_L1
+444-445 mediaAD_L2
+446-447 mediaAD_L3
+448-44B tensao
+44C-44D valor
+44E     rep
+44F     menu
+450     menu_lib
+451     filtro_E0
+452     filtro_c3
+453     TempoET
+454-457 TempoETreal
+458-459 Pot_real
+45A     Pot_HP
+45B-45C tensao_rede
+45D-460 corrente_media
+461-464 corrente_eq
+465-468 corrente_real
+469     soma_corrente
+46A-46B leituraEeprom
+46C     def_eeprom
+46D-46E @sprintf_string
+46F     read_int16_eeprom.address
+46F-478 calculos_potencia.string
+46F-497 controle_menu.string
+46F-475 leitura_sensores.string
+46F     MAIN.@SCRATCH1
+470     read_int16_eeprom.i
+470     MAIN.@SCRATCH2
+471     write_int16_eeprom.address
+471-472 read_int16_eeprom.data
+472-473 write_int16_eeprom.data
+473     read_int16_eeprom.@SCRATCH1
+474     write_int16_eeprom.i
+474     read_int16_eeprom.@SCRATCH2
+475     write_int16_eeprom.@SCRATCH1
+475     read_int16_eeprom.@SCRATCH3
+476     write_int16_eeprom.@SCRATCH2
+476     read_int16_eeprom.@SCRATCH4
+476     leitura_sensores.@SCRATCH1
+477     write_int16_eeprom.@SCRATCH3
+477     leitura_sensores.@SCRATCH2
+478     leitura_sensores.@SCRATCH3
+479     @PRINTF_D_292.P1
+479-47A @DIV1616.P2
+479-47C @SFTOI.P3
+479     leitura_sensores.@SCRATCH4
+479     calculos_potencia.@SCRATCH1
+47A     @PRINTF_D_292.P1
+47A     calculos_potencia.@SCRATCH2
+47B-47C @DIV1616.P1
+47B     calculos_potencia.@SCRATCH3
+47B     @PRINTF_D_292.@SCRATCH1
+47C     calculos_potencia.@SCRATCH4
+47C     @PRINTF_D_292.@SCRATCH2
+47D     @DIV1616.@SCRATCH1
+47D     @PRINTF_D_292.@SCRATCH3
+47E     @PRINTF_D_292.@SCRATCH4
+47F     @DIV88.P1
+480     @DIV88.P1
+481     @DIV88.@SCRATCH1
+498-4C0 controle_menu.string
+4C1-4E9 controle_menu.string
+4EA-4F0 controle_menu.string
+4F1-519 controle_menu.string
+51A-542 controle_menu.string
+543-549 controle_menu.string
+54A-572 controle_menu.string
+573-59B controle_menu.string
+59C-5A2 controle_menu.string
+5A3     @delay_ms1.P1
+5A3-5A6 @FLT.P2
+5A3-5A4 @ITOF.P3
+5A3-5A6 @ADDFF.P4
+5A3     glcd_fillScreen.color
+5A3     glcd_update.v
+5A3     glcd_rect.x1
+5A3     glcd_text57.x
+5A3-5A4 @PRINTF_LD_292.P1
+5A3-5A6 @PRINTF_L32D_292FPFPF.P2
+5A3     @PSTRINGC_292.@SCRATCH1
+5A3     controle_menu.@SCRATCH1
+5A4     glcd_text57.y
+5A4     glcd_fillScreen.v
+5A4     glcd_rect.y1
+5A4     glcd_update.h
+5A4     @PSTRINGC_292.@SCRATCH2
+5A4     controle_menu.@SCRATCH2
+5A5-5A6 glcd_text57.textptr
+5A5     glcd_fillScreen.h
+5A5     glcd_rect.x2
+5A5     glcd_update.@SCRATCH1
+5A5     controle_menu.@SCRATCH3
+5A5     @PRINTF_LD_292.@SCRATCH1
+5A6     glcd_instruction.x
+5A6     glcd_rect.y2
+5A6-5A7 glcd_fillScreen.d
+5A6     glcd_update.@SCRATCH2
+5A6     controle_menu.@SCRATCH4
+5A6     @PRINTF_LD_292.@SCRATCH2
+5A7-5AA @DIVFF.P1
+5A7     glcd_rect.fill
+5A7     @PRINTF_L32D_292FPFPF.P1
+5A7-5AA @FLT.P2
+5A7-5AA @ADDFF.P3
+5A7     glcd_text57.size
+5A7     glcd_update.@SCRATCH3
+5A7     @PRINTF_LD_292.@SCRATCH3
+5A8     glcd_text57.color
+5A8     glcd_data.x
+5A8     glcd_rect.color
+5A8     glcd_fillScreen.@SCRATCH1
+5A8     @PRINTF_L32D_292FPFPF.@SCRATCH1
+5A8     @PRINTF_LD_292.@SCRATCH4
+5A9     glcd_rect.i
+5A9     glcd_text57.j
+5A9.0   glcd_check_busy.busy
+5A9     glcd_fillScreen.@SCRATCH2
+5A9     @PRINTF_L32D_292FPFPF.@SCRATCH2
+5A9     @PRINTF_LD_292.@SCRATCH5
+5AA     glcd_text57.k
+5AA     glcd_rect.xmin
+5AA     glcd_fillScreen.@SCRATCH3
+5AA     @PRINTF_L32D_292FPFPF.@SCRATCH3
+5AA     @PRINTF_LD_292.@SCRATCH6
+5AB-5AE @DIVFF.P1
+5AB     glcd_rect.xmax
+5AB     glcd_text57.l
+5AB     glcd_fillScreen.@SCRATCH4
+5AB     @ADDFF.@SCRATCH1
+5AB     @FLT.@SCRATCH1
+5AB     @PRINTF_L32D_292FPFPF.@SCRATCH4
+5AB     @PRINTF_LD_292.@SCRATCH7
+5AC     glcd_rect.ymin
+5AC     glcd_text57.m
+5AC     @ADDFF.@SCRATCH2
+5AC     @FLT.@SCRATCH2
+5AC     @PRINTF_L32D_292FPFPF.@SCRATCH5
+5AD     glcd_rect.ymax
+5AD-5B1 glcd_text57.pixelData
+5AD     @ADDFF.@SCRATCH3
+5AD     @PRINTF_L32D_292FPFPF.@SCRATCH6
+5AE     glcd_line.x1
+5AE     @ADDFF.@SCRATCH4
+5AE     @PRINTF_L32D_292FPFPF.@SCRATCH7
+5AF     glcd_line.y1
+5AF     @ADDFF.@SCRATCH5
+5AF     @DIVFF.@SCRATCH1
+5AF     @PRINTF_L32D_292FPFPF.@SCRATCH8
+5B0-5B3 @FTOSD.P1
+5B0-5B3 @DIV3232.P2
+5B0-5B3 @MULFF.P3
+5B0     @SPRINTF.P4
+5B0     glcd_line.x2
+5B0     @ADDFF.@SCRATCH6
+5B0     @DIVFF.@SCRATCH2
+5B1     glcd_line.y2
+5B1     @ADDFF.@SCRATCH7
+5B1     @DIVFF.@SCRATCH3
+5B2     glcd_line.color
+5B2     glcd_text57.@SCRATCH1
+5B2     @ADDFF.@SCRATCH8
+5B2     @DIVFF.@SCRATCH4
+5B3-5B4 glcd_line.dy
+5B3     glcd_text57.@SCRATCH2
+5B3     @DIVFF.@SCRATCH5
+5B4-5B7 @MULFF.P1
+5B4-5B7 @DIV3232.P2
+5B4     glcd_text57.@SCRATCH3
+5B4     @DIVFF.@SCRATCH6
+5B4     @FTOSD.@SCRATCH1
+5B5-5B6 glcd_line.dx
+5B5     glcd_text57.@SCRATCH4
+5B6     glcd_text57.@SCRATCH5
+5B7     glcd_line.addx
+5B8     glcd_line.addy
+5B8     @MULFF.@SCRATCH1
+5B8     @DIV3232.@SCRATCH1
+5B9-5BA glcd_line.P
+5B9     @MULFF.@SCRATCH2
+5B9     @DIV3232.@SCRATCH2
+5BA     @MULFF.@SCRATCH3
+5BA     @DIV3232.@SCRATCH3
+5BB-5BC glcd_line.diff
+5BB     @DIV3232.@SCRATCH4
+5BC     @DIV3232.@SCRATCH5
+5BD     glcd_line.i
+5BE     glcd_pixel.x
+5BE     glcd_line.@SCRATCH1
+5BF     glcd_pixel.y
+5C0     glcd_pixel.color
+5C1     glcd_pixel.v
+5C2     glcd_pixel.h
+5C3     glcd_pixel.b
+5C4-5C5 @MUL1616.P1
+5C4     glcd_pixel.@SCRATCH1
+5C5     glcd_pixel.@SCRATCH2
+5C6-5C7 @MUL1616.P1
+5C8     @MUL1616.@SCRATCH1
+F83     PSP_DATA
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+037C  @delay_ms1
+03A6  glcd_check_busy
+03CC  glcd_instruction
+052A  glcd_data
+04AA  glcd_fillScreen
+0488  @MUL1616
+05E6  glcd_update
+06F2  glcd_init_graph
+0FFC  glcd_pixel
+0004  FONT
+0114  FONT2
+20B2  glcd_line
+21F0  glcd_rect
+10FE  glcd_text57
+3A76  write_int16_eeprom
+078C  read_int16_eeprom
+12C6  leitura_sensores
+07E0  @ITOF
+0816  @MULFF
+090C  @ADDFF
+0B84  @DIVFF
+0CE2  @FLT
+0E34  @SPRINTF
+0D5C  @FTOSD
+0DA0  @DIV3232
+0E56  @PRINTF_L32D_292FPFPF
+0200  @const302
+12A6  @PSTRINGC_292
+0204  @const305
+0208  @const307
+39E6  controle_saidas
+23AA  controle_menu
+020C  @const311
+0236  @const312
+023E  @const315
+0260  @const316
+22B4  @PRINTF_LD_292
+0268  @const320
+026E  @const323
+0290  @const324
+0298  @const326
+029E  @const330
+02A2  @const332
+02C4  @const333
+02CC  @const335
+02D2  @const338
+02F4  @const339
+02FC  @const341
+0302  @const345
+0306  @const347
+0328  @const348
+0330  @const350
+0336  @const353
+0358  @const354
+0360  @const356
+0366  @const360
+1D5C  calculos_potencia
+1BE6  @SFTOI
+036A  @const366
+1C22  @DIV1616
+1C6A  @DIV88
+1C96  @PRINTF_D_292
+0374  @const377
+3ADA  MAIN
+3ADA  @cinit1
+3BBA  @cinit2
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\Henrique\Desktop\Projeto painel de teste\Firmware\PIC18F452\
+
+Project Files:
+    Painel_testes.c                                         [29-mai-20 20:45  CRC=33130B46]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F452.H [16-jul-12 13:21  CRC=B966D23F]
+    st7920.c                                                [27-fev-20 11:03  CRC=BA4436C2]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\graphics.c [06-jul-10 07:49  CRC=70BB89DE]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\internal_eeprom.c [06-abr-07 11:40  CRC=E82006C9]
+
+Source signature=E7B9ABB7
+
+Units:
+    Painel_testes (main)
+
+Compiler Settings:
+    Processor:      PIC18F452
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      Painel_testes.err
+    Ext Symbols: Painel_testes.esym
+    INHX32:      Painel_testes.hex
+    Symbols:     Painel_testes.sym
+    List:        Painel_testes.lst
+    Debug/COFF:  Painel_testes.cof
+    Project:     Painel_testes.PJT
+    Call Tree:   Painel_testes.tre
+    Statistics:  Painel_testes.STA
